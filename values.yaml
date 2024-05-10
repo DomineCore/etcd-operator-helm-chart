@@ -103,7 +103,7 @@ restoreOperator:
   replicaCount: 1
   image:
     repository: quay.io/coreos/etcd-operator
-    tag: v0.9.4
+    tag: v0.9.5
     pullPolicy: Always
   port: 19999
   resources:
