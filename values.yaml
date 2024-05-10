@@ -16,7 +16,7 @@ rbac:
 ## Service account name and whether to create it
 serviceAccount:
   create: true
-  name:
+  name: yafei
 
 # Select what to deploy
 deployments:
