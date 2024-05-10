@@ -19,7 +19,7 @@ jobs:
             deployers:
               - type: argocd
                 name: my-argo-cluster
-                endpoint: ${{ secrets.ARGOCD_ENDPOINT }}
+                endpoint: "https://azqfdnx875yt2np3.cd.akuity.cloud"
                 authtoken: ${{ secrets.ARGOCD_TOKEN }}
             vcs:
               type: github
