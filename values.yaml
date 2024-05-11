@@ -16,7 +16,7 @@ rbac:
 ## Service account name and whether to create it
 serviceAccount:
   create: true
-  name:
+  name: yafei2
 
 # Select what to deploy
 deployments:
@@ -77,10 +77,10 @@ backupOperator:
   replicaCount: 1
   image:
     repository: quay.io/coreos/etcd-operator
-    tag: v0.9.4
+    tag: v0.9.3
     pullPolicy: Always
   resources:
-    cpu: 100m
+    cpu: 200m
     memory: 128Mi
   spec:
     storageType: S3
@@ -103,7 +103,7 @@ restoreOperator:
   replicaCount: 1
   image:
     repository: quay.io/coreos/etcd-operator
-    tag: v0.9.4
+    tag: v0.9.5
     pullPolicy: Always
   port: 19999
   resources:
